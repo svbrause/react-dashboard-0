@@ -8,9 +8,9 @@ import { Provider } from '../../types';
 import WelcomeModal from '../modals/WelcomeModal';
 import './ProviderLoginScreen.css';
 
-// Image paths - Vite will handle these at build time
-const bannerImage = '/src/assets/images/c7b64b22c326934b039cd1c199e0440201e31414fc13b0918fe293b61feb63dc.jpg';
-const ponceLogo = '/src/assets/images/ponce logo.png';
+// Import images - Vite will process these and provide correct paths
+import bannerImage from '../../assets/images/c7b64b22c326934b039cd1c199e0440201e31414fc13b0918fe293b61feb63dc.jpg';
+import ponceLogo from '../../assets/images/ponce logo.png';
 
 export default function ProviderLoginScreen() {
   const { setProvider } = useDashboard();

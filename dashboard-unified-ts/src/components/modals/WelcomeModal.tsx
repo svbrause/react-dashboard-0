@@ -1,9 +1,8 @@
 // Welcome Modal Component
 
 import { useEffect } from "react";
+import ponceLogo from "../../assets/images/ponce logo.png";
 import "./WelcomeModal.css";
-
-const ponceLogo = "/src/assets/images/ponce logo.png";
 
 interface WelcomeModalProps {
   onClose: () => void;
