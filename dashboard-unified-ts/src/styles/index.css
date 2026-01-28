@@ -51,33 +51,44 @@ body {
   transition: background 0.3s ease;
 }
 
-/* Login Screen Styles */
+/* Login Screen Styles - Overridden by ProviderLoginScreen.css */
 .login-screen {
   min-height: 100vh;
+  height: 100vh;
   background: var(--theme-bg-gradient);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .login-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 100%;
   min-height: 100vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .login-banner {
   position: relative;
   background: #000;
   overflow: hidden;
-  min-height: 100vh;
+  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
   width: 100%;
   margin: 0;
   padding: 0;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .banner-image {

@@ -1,13 +1,29 @@
 /* Provider Login Screen Styles - extracted from main CSS */
 
-.login-screen {
-  min-height: 100vh;
-  background: var(--theme-bg-gradient);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Ensure no gaps at the top */
+html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.login-screen {
+  min-height: 100vh;
+  height: 100vh;
+  background: var(--theme-bg-gradient);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .login-layout {
@@ -16,8 +32,10 @@
   width: 100%;
   max-width: 100%;
   min-height: 100vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .login-banner {
@@ -31,6 +49,7 @@
   margin: 0;
   padding: 0;
   flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .banner-image {
